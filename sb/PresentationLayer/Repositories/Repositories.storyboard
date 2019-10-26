@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mik-mh-C5p">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mik-mh-C5p">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,9 +17,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repositories" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUy-lM-jMU">
-                                <rect key="frame" x="154.5" y="76" width="105.5" height="21"/>
+                                <rect key="frame" x="154.5" y="76" width="110" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="105.5" id="UKD-08-z27"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="110" id="UKD-08-z27"/>
                                     <constraint firstAttribute="height" constant="21" id="tha-DT-XFu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
@@ -43,7 +41,7 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="48"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vFv-ou-l2G" id="RhG-xk-kBI">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="47.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="48"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vak-gn-nAZ">
@@ -135,7 +133,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="NyH-xq-VkA" firstAttribute="top" secondItem="VUy-lM-jMU" secondAttribute="bottom" constant="23" id="4xV-jE-STH"/>
-                            <constraint firstItem="VUy-lM-jMU" firstAttribute="centerX" secondItem="zjN-Jr-poi" secondAttribute="centerX" id="9zJ-le-7xV"/>
+                            <constraint firstItem="VUy-lM-jMU" firstAttribute="centerX" secondItem="zjN-Jr-poi" secondAttribute="centerX" constant="2.5" id="9zJ-le-7xV"/>
                             <constraint firstItem="6Iu-ex-TFw" firstAttribute="top" secondItem="ONY-8v-uiH" secondAttribute="bottom" constant="8" id="FHH-J1-B7b"/>
                             <constraint firstAttribute="bottom" secondItem="6Iu-ex-TFw" secondAttribute="bottom" id="Kb4-Si-Ed7"/>
                             <constraint firstItem="VUy-lM-jMU" firstAttribute="top" secondItem="RLN-cS-tPS" secondAttribute="top" constant="32" id="M5U-Nx-QUa"/>
