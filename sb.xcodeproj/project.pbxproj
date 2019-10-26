@@ -1,0 +1,1074 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8479D3DA23638E2A000808CF /* RepositoryInfoViewFields.m in Sources */ = {isa = PBXBuildFile; fileRef = 8479D3D923638E2A000808CF /* RepositoryInfoViewFields.m */; };
+		F91D5C5B2361B5AF005FA273 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5C5A2361B5AF005FA273 /* AppDelegate.m */; };
+		F91D5C632361B5B0005FA273 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F91D5C622361B5B0005FA273 /* Assets.xcassets */; };
+		F91D5C662361B5B0005FA273 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F91D5C642361B5B0005FA273 /* LaunchScreen.storyboard */; };
+		F91D5C692361B5B0005FA273 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5C682361B5B0005FA273 /* main.m */; };
+		F91D5C752361B664005FA273 /* AuthorizationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5C742361B664005FA273 /* AuthorizationModel.m */; };
+		F91D5C782361B68D005FA273 /* AuthorizationPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5C772361B68D005FA273 /* AuthorizationPresenter.m */; };
+		F91D5C7E2361B720005FA273 /* AuthorizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5C7D2361B720005FA273 /* AuthorizationViewController.m */; };
+		F91D5C852361B9AC005FA273 /* RemoteRequestService.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5C842361B9AC005FA273 /* RemoteRequestService.m */; };
+		F91D5C972361BF7B005FA273 /* Commits.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F91D5C962361BF7B005FA273 /* Commits.storyboard */; };
+		F91D5C992361BF9B005FA273 /* Repositories.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F91D5C982361BF9B005FA273 /* Repositories.storyboard */; };
+		F91D5C9B2361BFA8005FA273 /* RepositoryInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F91D5C9A2361BFA8005FA273 /* RepositoryInfo.storyboard */; };
+		F91D5C9F2361CA4F005FA273 /* GithubRequestService.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5C9E2361CA4F005FA273 /* GithubRequestService.m */; };
+		F91D5CA82361CAE4005FA273 /* GithubBaseRequestEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5CA72361CAE4005FA273 /* GithubBaseRequestEntity.m */; };
+		F91D5CAB2361CAFF005FA273 /* GithubRepositoriesRequestEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5CAA2361CAFF005FA273 /* GithubRepositoriesRequestEntity.m */; };
+		F91D5CB12361CB58005FA273 /* GithubCommitsRequestEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5CB02361CB58005FA273 /* GithubCommitsRequestEntity.m */; };
+		F91D5CB92361CD97005FA273 /* GithubBaseResponseEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5CB82361CD97005FA273 /* GithubBaseResponseEntity.m */; };
+		F91D5CBC2361CDB9005FA273 /* GithubCommitsResponseEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5CBB2361CDB9005FA273 /* GithubCommitsResponseEntity.m */; };
+		F91D5CBF2361CDD1005FA273 /* GithubRepositoriesResponseEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5CBE2361CDD1005FA273 /* GithubRepositoriesResponseEntity.m */; };
+		F91D5CC62361DE0E005FA273 /* GithubRepositoryAuthorEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5CC52361DE0E005FA273 /* GithubRepositoryAuthorEntity.m */; };
+		F91D5CCA2361DF55005FA273 /* GithubRepositoryEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5CC92361DF55005FA273 /* GithubRepositoryEntity.m */; };
+		F91D5CCE2361E0B9005FA273 /* SerializableEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5CCD2361E0B9005FA273 /* SerializableEntity.m */; };
+		F91D5CD22361FDE2005FA273 /* GithubCommitEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5CD12361FDE2005FA273 /* GithubCommitEntity.m */; };
+		F91D5CDA2362E09C005FA273 /* ErrorConvertionService.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5CD92362E09C005FA273 /* ErrorConvertionService.m */; };
+		F91D5CE82362E83B005FA273 /* CredentialsStorageService.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5CE72362E83B005FA273 /* CredentialsStorageService.m */; };
+		F91D5CEB2362E9BE005FA273 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F91D5CEA2362E9BE005FA273 /* Security.framework */; };
+		F91D5CEF2362FABE005FA273 /* SessionHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5CEE2362FABE005FA273 /* SessionHolder.m */; };
+		F91D5D05236300BE005FA273 /* SessionUser.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5D04236300BE005FA273 /* SessionUser.m */; };
+		F91D5D08236304F6005FA273 /* RepositoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5D07236304F6005FA273 /* RepositoriesViewController.m */; };
+		F91D5D0B23630515005FA273 /* RepositoriesPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5D0A23630515005FA273 /* RepositoriesPresenter.m */; };
+		F91D5D0E2363051E005FA273 /* RepositoriesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5D0D2363051E005FA273 /* RepositoriesModel.m */; };
+		F91D5D112363052C005FA273 /* RepositoryInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5D102363052C005FA273 /* RepositoryInfoViewController.m */; };
+		F91D5D1423630535005FA273 /* RepositoryInfoPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5D1323630535005FA273 /* RepositoryInfoPresenter.m */; };
+		F91D5D172363053E005FA273 /* RepositoryInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5D162363053E005FA273 /* RepositoryInfoModel.m */; };
+		F91D5D1A23630554005FA273 /* CommitsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5D1923630554005FA273 /* CommitsViewController.m */; };
+		F91D5D1D2363055E005FA273 /* CommitsPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5D1C2363055E005FA273 /* CommitsPresenter.m */; };
+		F91D5D2023630566005FA273 /* CommitsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5D1F23630566005FA273 /* CommitsModel.m */; };
+		F91D5D3023631513005FA273 /* AbstractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5D2F23631513005FA273 /* AbstractViewController.m */; };
+		F91D5D4623631D21005FA273 /* Wireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5D4523631D21005FA273 /* Wireframe.m */; };
+		F91D5D4923632979005FA273 /* Authorization.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F91D5C5F2361B5AF005FA273 /* Authorization.storyboard */; };
+		F91D5D5423632AA5005FA273 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = F91D5D4B23632AA5005FA273 /* LICENSE */; };
+		F91D5D5523632AA5005FA273 /* Readme.markdown in Resources */ = {isa = PBXBuildFile; fileRef = F91D5D4C23632AA5005FA273 /* Readme.markdown */; };
+		F91D5D5623632AA5005FA273 /* SAMKeychain.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F91D5D4E23632AA5005FA273 /* SAMKeychain.bundle */; };
+		F91D5D5723632AA5005FA273 /* SAMKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5D5023632AA5005FA273 /* SAMKeychainQuery.m */; };
+		F91D5D5823632AA5005FA273 /* SAMKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5D5323632AA5005FA273 /* SAMKeychain.m */; };
+		F91D5D5C236332FA005FA273 /* RepositoriesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5D5B236332FA005FA273 /* RepositoriesTableViewCell.m */; };
+		F91D5D60236337E6005FA273 /* AbstractModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5D5F236337E6005FA273 /* AbstractModel.m */; };
+		F91D5D6B23633E27005FA273 /* CommitsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5D6A23633E27005FA273 /* CommitsTableViewCell.m */; };
+		F91D5D6F23633F4A005FA273 /* CommitsViewFields.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5D6E23633F4A005FA273 /* CommitsViewFields.m */; };
+		F91D5D7323633F6D005FA273 /* CommitsElementViewFields.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5D7223633F6D005FA273 /* CommitsElementViewFields.m */; };
+		F91D5D7723645F3C005FA273 /* RepositoriesViewFields.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5D7623645F3C005FA273 /* RepositoriesViewFields.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8479D3D823638E2A000808CF /* RepositoryInfoViewFields.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RepositoryInfoViewFields.h; sourceTree = "<group>"; };
+		8479D3D923638E2A000808CF /* RepositoryInfoViewFields.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RepositoryInfoViewFields.m; sourceTree = "<group>"; };
+		F91D5C562361B5AF005FA273 /* sb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sb.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F91D5C592361B5AF005FA273 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F91D5C5A2361B5AF005FA273 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F91D5C602361B5AF005FA273 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Authorization.storyboard; sourceTree = "<group>"; };
+		F91D5C622361B5B0005FA273 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F91D5C652361B5B0005FA273 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F91D5C672361B5B0005FA273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F91D5C682361B5B0005FA273 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F91D5C732361B664005FA273 /* AuthorizationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthorizationModel.h; sourceTree = "<group>"; };
+		F91D5C742361B664005FA273 /* AuthorizationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthorizationModel.m; sourceTree = "<group>"; };
+		F91D5C762361B68D005FA273 /* AuthorizationPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthorizationPresenter.h; sourceTree = "<group>"; };
+		F91D5C772361B68D005FA273 /* AuthorizationPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthorizationPresenter.m; sourceTree = "<group>"; };
+		F91D5C7C2361B720005FA273 /* AuthorizationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthorizationViewController.h; sourceTree = "<group>"; };
+		F91D5C7D2361B720005FA273 /* AuthorizationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthorizationViewController.m; sourceTree = "<group>"; };
+		F91D5C832361B9AC005FA273 /* RemoteRequestService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoteRequestService.h; sourceTree = "<group>"; };
+		F91D5C842361B9AC005FA273 /* RemoteRequestService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemoteRequestService.m; sourceTree = "<group>"; };
+		F91D5C962361BF7B005FA273 /* Commits.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Commits.storyboard; sourceTree = "<group>"; };
+		F91D5C982361BF9B005FA273 /* Repositories.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Repositories.storyboard; sourceTree = "<group>"; };
+		F91D5C9A2361BFA8005FA273 /* RepositoryInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RepositoryInfo.storyboard; sourceTree = "<group>"; };
+		F91D5C9D2361CA4F005FA273 /* GithubRequestService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GithubRequestService.h; sourceTree = "<group>"; };
+		F91D5C9E2361CA4F005FA273 /* GithubRequestService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GithubRequestService.m; sourceTree = "<group>"; };
+		F91D5CA62361CAE4005FA273 /* GithubBaseRequestEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GithubBaseRequestEntity.h; sourceTree = "<group>"; };
+		F91D5CA72361CAE4005FA273 /* GithubBaseRequestEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GithubBaseRequestEntity.m; sourceTree = "<group>"; };
+		F91D5CA92361CAFF005FA273 /* GithubRepositoriesRequestEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GithubRepositoriesRequestEntity.h; sourceTree = "<group>"; };
+		F91D5CAA2361CAFF005FA273 /* GithubRepositoriesRequestEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GithubRepositoriesRequestEntity.m; sourceTree = "<group>"; };
+		F91D5CAF2361CB58005FA273 /* GithubCommitsRequestEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GithubCommitsRequestEntity.h; sourceTree = "<group>"; };
+		F91D5CB02361CB58005FA273 /* GithubCommitsRequestEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GithubCommitsRequestEntity.m; sourceTree = "<group>"; };
+		F91D5CB72361CD97005FA273 /* GithubBaseResponseEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GithubBaseResponseEntity.h; sourceTree = "<group>"; };
+		F91D5CB82361CD97005FA273 /* GithubBaseResponseEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GithubBaseResponseEntity.m; sourceTree = "<group>"; };
+		F91D5CBA2361CDB9005FA273 /* GithubCommitsResponseEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GithubCommitsResponseEntity.h; sourceTree = "<group>"; };
+		F91D5CBB2361CDB9005FA273 /* GithubCommitsResponseEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GithubCommitsResponseEntity.m; sourceTree = "<group>"; };
+		F91D5CBD2361CDD1005FA273 /* GithubRepositoriesResponseEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GithubRepositoriesResponseEntity.h; sourceTree = "<group>"; };
+		F91D5CBE2361CDD1005FA273 /* GithubRepositoriesResponseEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GithubRepositoriesResponseEntity.m; sourceTree = "<group>"; };
+		F91D5CC42361DE0E005FA273 /* GithubRepositoryAuthorEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GithubRepositoryAuthorEntity.h; sourceTree = "<group>"; };
+		F91D5CC52361DE0E005FA273 /* GithubRepositoryAuthorEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GithubRepositoryAuthorEntity.m; sourceTree = "<group>"; };
+		F91D5CC82361DF55005FA273 /* GithubRepositoryEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GithubRepositoryEntity.h; sourceTree = "<group>"; };
+		F91D5CC92361DF55005FA273 /* GithubRepositoryEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GithubRepositoryEntity.m; sourceTree = "<group>"; };
+		F91D5CCC2361E0B9005FA273 /* SerializableEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SerializableEntity.h; sourceTree = "<group>"; };
+		F91D5CCD2361E0B9005FA273 /* SerializableEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SerializableEntity.m; sourceTree = "<group>"; };
+		F91D5CD02361FDE2005FA273 /* GithubCommitEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GithubCommitEntity.h; sourceTree = "<group>"; };
+		F91D5CD12361FDE2005FA273 /* GithubCommitEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GithubCommitEntity.m; sourceTree = "<group>"; };
+		F91D5CD32362D1D9005FA273 /* AuthorizationViewInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthorizationViewInput.h; sourceTree = "<group>"; };
+		F91D5CD42362D257005FA273 /* AuthorizationViewOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthorizationViewOutput.h; sourceTree = "<group>"; };
+		F91D5CD52362D2A8005FA273 /* AuthorizationModelInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthorizationModelInput.h; sourceTree = "<group>"; };
+		F91D5CD62362D2B5005FA273 /* AuthorizationModelOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthorizationModelOutput.h; sourceTree = "<group>"; };
+		F91D5CD82362E09C005FA273 /* ErrorConvertionService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ErrorConvertionService.h; sourceTree = "<group>"; };
+		F91D5CD92362E09C005FA273 /* ErrorConvertionService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ErrorConvertionService.m; sourceTree = "<group>"; };
+		F91D5CE62362E83B005FA273 /* CredentialsStorageService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CredentialsStorageService.h; sourceTree = "<group>"; };
+		F91D5CE72362E83B005FA273 /* CredentialsStorageService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CredentialsStorageService.m; sourceTree = "<group>"; };
+		F91D5CEA2362E9BE005FA273 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F91D5CED2362FABE005FA273 /* SessionHolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SessionHolder.h; sourceTree = "<group>"; };
+		F91D5CEE2362FABE005FA273 /* SessionHolder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SessionHolder.m; sourceTree = "<group>"; };
+		F91D5D03236300BE005FA273 /* SessionUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SessionUser.h; sourceTree = "<group>"; };
+		F91D5D04236300BE005FA273 /* SessionUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SessionUser.m; sourceTree = "<group>"; };
+		F91D5D06236304F6005FA273 /* RepositoriesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RepositoriesViewController.h; sourceTree = "<group>"; };
+		F91D5D07236304F6005FA273 /* RepositoriesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RepositoriesViewController.m; sourceTree = "<group>"; };
+		F91D5D0923630515005FA273 /* RepositoriesPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RepositoriesPresenter.h; sourceTree = "<group>"; };
+		F91D5D0A23630515005FA273 /* RepositoriesPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RepositoriesPresenter.m; sourceTree = "<group>"; };
+		F91D5D0C2363051E005FA273 /* RepositoriesModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RepositoriesModel.h; sourceTree = "<group>"; };
+		F91D5D0D2363051E005FA273 /* RepositoriesModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RepositoriesModel.m; sourceTree = "<group>"; };
+		F91D5D0F2363052C005FA273 /* RepositoryInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RepositoryInfoViewController.h; sourceTree = "<group>"; };
+		F91D5D102363052C005FA273 /* RepositoryInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RepositoryInfoViewController.m; sourceTree = "<group>"; };
+		F91D5D1223630535005FA273 /* RepositoryInfoPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RepositoryInfoPresenter.h; sourceTree = "<group>"; };
+		F91D5D1323630535005FA273 /* RepositoryInfoPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RepositoryInfoPresenter.m; sourceTree = "<group>"; };
+		F91D5D152363053E005FA273 /* RepositoryInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RepositoryInfoModel.h; sourceTree = "<group>"; };
+		F91D5D162363053E005FA273 /* RepositoryInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RepositoryInfoModel.m; sourceTree = "<group>"; };
+		F91D5D1823630554005FA273 /* CommitsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommitsViewController.h; sourceTree = "<group>"; };
+		F91D5D1923630554005FA273 /* CommitsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommitsViewController.m; sourceTree = "<group>"; };
+		F91D5D1B2363055E005FA273 /* CommitsPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommitsPresenter.h; sourceTree = "<group>"; };
+		F91D5D1C2363055E005FA273 /* CommitsPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommitsPresenter.m; sourceTree = "<group>"; };
+		F91D5D1E23630566005FA273 /* CommitsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommitsModel.h; sourceTree = "<group>"; };
+		F91D5D1F23630566005FA273 /* CommitsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommitsModel.m; sourceTree = "<group>"; };
+		F91D5D212363057E005FA273 /* CommitsModelInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommitsModelInput.h; sourceTree = "<group>"; };
+		F91D5D2223630587005FA273 /* CommitsModelOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommitsModelOutput.h; sourceTree = "<group>"; };
+		F91D5D2323630594005FA273 /* CommitsViewInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommitsViewInput.h; sourceTree = "<group>"; };
+		F91D5D242363059C005FA273 /* CommitsViewOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommitsViewOutput.h; sourceTree = "<group>"; };
+		F91D5D25236305AF005FA273 /* RepositoriesModelInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RepositoriesModelInput.h; sourceTree = "<group>"; };
+		F91D5D26236305B6005FA273 /* RepositoriesModelOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RepositoriesModelOutput.h; sourceTree = "<group>"; };
+		F91D5D27236305C5005FA273 /* RepositoriesViewInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RepositoriesViewInput.h; sourceTree = "<group>"; };
+		F91D5D28236305CE005FA273 /* RepositoriesViewOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RepositoriesViewOutput.h; sourceTree = "<group>"; };
+		F91D5D29236305DC005FA273 /* RepositoryInfoModelInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RepositoryInfoModelInput.h; sourceTree = "<group>"; };
+		F91D5D2A236305E3005FA273 /* RepositoryInfoModelOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RepositoryInfoModelOutput.h; sourceTree = "<group>"; };
+		F91D5D2B236305F5005FA273 /* RepositoryInfoViewInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RepositoryInfoViewInput.h; sourceTree = "<group>"; };
+		F91D5D2C236305FC005FA273 /* RepositoryInfoViewOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RepositoryInfoViewOutput.h; sourceTree = "<group>"; };
+		F91D5D2E23631513005FA273 /* AbstractViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractViewController.h; sourceTree = "<group>"; };
+		F91D5D2F23631513005FA273 /* AbstractViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstractViewController.m; sourceTree = "<group>"; };
+		F91D5D4423631D21005FA273 /* Wireframe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Wireframe.h; sourceTree = "<group>"; };
+		F91D5D4523631D21005FA273 /* Wireframe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Wireframe.m; sourceTree = "<group>"; };
+		F91D5D48236324E1005FA273 /* AbstractViewInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractViewInput.h; sourceTree = "<group>"; };
+		F91D5D4B23632AA5005FA273 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		F91D5D4C23632AA5005FA273 /* Readme.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.markdown; sourceTree = "<group>"; };
+		F91D5D4E23632AA5005FA273 /* SAMKeychain.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SAMKeychain.bundle; sourceTree = "<group>"; };
+		F91D5D5023632AA5005FA273 /* SAMKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMKeychainQuery.m; sourceTree = "<group>"; };
+		F91D5D5123632AA5005FA273 /* SAMKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMKeychain.h; sourceTree = "<group>"; };
+		F91D5D5223632AA5005FA273 /* SAMKeychainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMKeychainQuery.h; sourceTree = "<group>"; };
+		F91D5D5323632AA5005FA273 /* SAMKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMKeychain.m; sourceTree = "<group>"; };
+		F91D5D5A236332FA005FA273 /* RepositoriesTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RepositoriesTableViewCell.h; sourceTree = "<group>"; };
+		F91D5D5B236332FA005FA273 /* RepositoriesTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RepositoriesTableViewCell.m; sourceTree = "<group>"; };
+		F91D5D5E236337E6005FA273 /* AbstractModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractModel.h; sourceTree = "<group>"; };
+		F91D5D5F236337E6005FA273 /* AbstractModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstractModel.m; sourceTree = "<group>"; };
+		F91D5D6123633B13005FA273 /* AbstractModelOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractModelOutput.h; sourceTree = "<group>"; };
+		F91D5D6923633E27005FA273 /* CommitsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommitsTableViewCell.h; sourceTree = "<group>"; };
+		F91D5D6A23633E27005FA273 /* CommitsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommitsTableViewCell.m; sourceTree = "<group>"; };
+		F91D5D6D23633F4A005FA273 /* CommitsViewFields.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommitsViewFields.h; sourceTree = "<group>"; };
+		F91D5D6E23633F4A005FA273 /* CommitsViewFields.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommitsViewFields.m; sourceTree = "<group>"; };
+		F91D5D7123633F6D005FA273 /* CommitsElementViewFields.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommitsElementViewFields.h; sourceTree = "<group>"; };
+		F91D5D7223633F6D005FA273 /* CommitsElementViewFields.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommitsElementViewFields.m; sourceTree = "<group>"; };
+		F91D5D7523645F3C005FA273 /* RepositoriesViewFields.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RepositoriesViewFields.h; sourceTree = "<group>"; };
+		F91D5D7623645F3C005FA273 /* RepositoriesViewFields.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RepositoriesViewFields.m; sourceTree = "<group>"; };
+		F91D5D79236460A9005FA273 /* AbstractViewOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractViewOutput.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F91D5C532361B5AF005FA273 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F91D5CEB2362E9BE005FA273 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8479D3D723638E12000808CF /* Fields */ = {
+			isa = PBXGroup;
+			children = (
+				8479D3D823638E2A000808CF /* RepositoryInfoViewFields.h */,
+				8479D3D923638E2A000808CF /* RepositoryInfoViewFields.m */,
+			);
+			path = Fields;
+			sourceTree = "<group>";
+		};
+		F91D5C4D2361B5AF005FA273 = {
+			isa = PBXGroup;
+			children = (
+				F91D5C582361B5AF005FA273 /* sb */,
+				F91D5C572361B5AF005FA273 /* Products */,
+				F91D5CE92362E9BE005FA273 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F91D5C572361B5AF005FA273 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5C562361B5AF005FA273 /* sb.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F91D5C582361B5AF005FA273 /* sb */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5C932361BF0D005FA273 /* ApplicationLayer */,
+				F91D5C942361BF17005FA273 /* CoreLayer */,
+				F91D5C952361BF22005FA273 /* PresentationLayer */,
+			);
+			path = sb;
+			sourceTree = "<group>";
+		};
+		F91D5C6F2361B5D7005FA273 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5C702361B628005FA273 /* Model */,
+				F91D5C722361B630005FA273 /* Presenter */,
+				F91D5C712361B62D005FA273 /* View */,
+				F91D5C5F2361B5AF005FA273 /* Authorization.storyboard */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		F91D5C702361B628005FA273 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5C732361B664005FA273 /* AuthorizationModel.h */,
+				F91D5C742361B664005FA273 /* AuthorizationModel.m */,
+				F91D5CD52362D2A8005FA273 /* AuthorizationModelInput.h */,
+				F91D5CD62362D2B5005FA273 /* AuthorizationModelOutput.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F91D5C712361B62D005FA273 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5C7C2361B720005FA273 /* AuthorizationViewController.h */,
+				F91D5C7D2361B720005FA273 /* AuthorizationViewController.m */,
+				F91D5CD32362D1D9005FA273 /* AuthorizationViewInput.h */,
+				F91D5CD42362D257005FA273 /* AuthorizationViewOutput.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F91D5C722361B630005FA273 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5C762361B68D005FA273 /* AuthorizationPresenter.h */,
+				F91D5C772361B68D005FA273 /* AuthorizationPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F91D5C802361B761005FA273 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5C822361B932005FA273 /* RemoteRequestService */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F91D5C812361B8B2005FA273 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5CE52362E81E005FA273 /* Credentials */,
+				F91D5CDB2362E691005FA273 /* Keychain */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		F91D5C822361B932005FA273 /* RemoteRequestService */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5C832361B9AC005FA273 /* RemoteRequestService.h */,
+				F91D5C842361B9AC005FA273 /* RemoteRequestService.m */,
+			);
+			path = RemoteRequestService;
+			sourceTree = "<group>";
+		};
+		F91D5C862361BE52005FA273 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5C8B2361BEA3005FA273 /* Model */,
+				F91D5C892361BE9B005FA273 /* Presenter */,
+				F91D5C8A2361BE9F005FA273 /* View */,
+				F91D5C982361BF9B005FA273 /* Repositories.storyboard */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		F91D5C872361BE60005FA273 /* RepositoryInfo */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5C8E2361BEAE005FA273 /* Model */,
+				F91D5C8C2361BEA7005FA273 /* Presenter */,
+				F91D5C8D2361BEAB005FA273 /* View */,
+				F91D5C9A2361BFA8005FA273 /* RepositoryInfo.storyboard */,
+			);
+			path = RepositoryInfo;
+			sourceTree = "<group>";
+		};
+		F91D5C882361BE79005FA273 /* Commits */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5C922361BEC9005FA273 /* Model */,
+				F91D5C8F2361BEB2005FA273 /* Presenter */,
+				F91D5C912361BEC4005FA273 /* View */,
+				F91D5C962361BF7B005FA273 /* Commits.storyboard */,
+			);
+			path = Commits;
+			sourceTree = "<group>";
+		};
+		F91D5C892361BE9B005FA273 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5D0923630515005FA273 /* RepositoriesPresenter.h */,
+				F91D5D0A23630515005FA273 /* RepositoriesPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F91D5C8A2361BE9F005FA273 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5D7423645F18005FA273 /* Fields */,
+				F91D5D59236332E7005FA273 /* Cells */,
+				F91D5D06236304F6005FA273 /* RepositoriesViewController.h */,
+				F91D5D07236304F6005FA273 /* RepositoriesViewController.m */,
+				F91D5D27236305C5005FA273 /* RepositoriesViewInput.h */,
+				F91D5D28236305CE005FA273 /* RepositoriesViewOutput.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F91D5C8B2361BEA3005FA273 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5D0C2363051E005FA273 /* RepositoriesModel.h */,
+				F91D5D0D2363051E005FA273 /* RepositoriesModel.m */,
+				F91D5D25236305AF005FA273 /* RepositoriesModelInput.h */,
+				F91D5D26236305B6005FA273 /* RepositoriesModelOutput.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F91D5C8C2361BEA7005FA273 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5D1223630535005FA273 /* RepositoryInfoPresenter.h */,
+				F91D5D1323630535005FA273 /* RepositoryInfoPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F91D5C8D2361BEAB005FA273 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8479D3D723638E12000808CF /* Fields */,
+				F91D5D0F2363052C005FA273 /* RepositoryInfoViewController.h */,
+				F91D5D102363052C005FA273 /* RepositoryInfoViewController.m */,
+				F91D5D2B236305F5005FA273 /* RepositoryInfoViewInput.h */,
+				F91D5D2C236305FC005FA273 /* RepositoryInfoViewOutput.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F91D5C8E2361BEAE005FA273 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5D152363053E005FA273 /* RepositoryInfoModel.h */,
+				F91D5D162363053E005FA273 /* RepositoryInfoModel.m */,
+				F91D5D29236305DC005FA273 /* RepositoryInfoModelInput.h */,
+				F91D5D2A236305E3005FA273 /* RepositoryInfoModelOutput.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F91D5C8F2361BEB2005FA273 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5D1B2363055E005FA273 /* CommitsPresenter.h */,
+				F91D5D1C2363055E005FA273 /* CommitsPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F91D5C912361BEC4005FA273 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5D6C23633F3A005FA273 /* Fields */,
+				F91D5D6823633E15005FA273 /* Cells */,
+				F91D5D1823630554005FA273 /* CommitsViewController.h */,
+				F91D5D1923630554005FA273 /* CommitsViewController.m */,
+				F91D5D2323630594005FA273 /* CommitsViewInput.h */,
+				F91D5D242363059C005FA273 /* CommitsViewOutput.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F91D5C922361BEC9005FA273 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5D1E23630566005FA273 /* CommitsModel.h */,
+				F91D5D1F23630566005FA273 /* CommitsModel.m */,
+				F91D5D212363057E005FA273 /* CommitsModelInput.h */,
+				F91D5D2223630587005FA273 /* CommitsModelOutput.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F91D5C932361BF0D005FA273 /* ApplicationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5C592361B5AF005FA273 /* AppDelegate.h */,
+				F91D5C5A2361B5AF005FA273 /* AppDelegate.m */,
+				F91D5C622361B5B0005FA273 /* Assets.xcassets */,
+				F91D5C672361B5B0005FA273 /* Info.plist */,
+				F91D5C642361B5B0005FA273 /* LaunchScreen.storyboard */,
+				F91D5C682361B5B0005FA273 /* main.m */,
+			);
+			path = ApplicationLayer;
+			sourceTree = "<group>";
+		};
+		F91D5C942361BF17005FA273 /* CoreLayer */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5CEC2362FAB2005FA273 /* Session */,
+				F91D5CCB2361E0A7005FA273 /* SerializableEntity */,
+				F91D5CA02361CA69005FA273 /* Github */,
+				F91D5C812361B8B2005FA273 /* Persistence */,
+				F91D5C802361B761005FA273 /* Network */,
+			);
+			path = CoreLayer;
+			sourceTree = "<group>";
+		};
+		F91D5C952361BF22005FA273 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5D2D23631502005FA273 /* Abstract */,
+				F91D5CD72362E081005FA273 /* ErrorConvertion */,
+				F91D5C6F2361B5D7005FA273 /* Authorization */,
+				F91D5C882361BE79005FA273 /* Commits */,
+				F91D5C862361BE52005FA273 /* Repositories */,
+				F91D5C872361BE60005FA273 /* RepositoryInfo */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		F91D5CA02361CA69005FA273 /* Github */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5CB22361CD3D005FA273 /* Entities */,
+				F91D5CA22361CAA4005FA273 /* Service */,
+			);
+			path = Github;
+			sourceTree = "<group>";
+		};
+		F91D5CA12361CA82005FA273 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5CA52361CAC9005FA273 /* Commits */,
+				F91D5CA32361CAB8005FA273 /* Repositories */,
+				F91D5CA62361CAE4005FA273 /* GithubBaseRequestEntity.h */,
+				F91D5CA72361CAE4005FA273 /* GithubBaseRequestEntity.m */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		F91D5CA22361CAA4005FA273 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5C9D2361CA4F005FA273 /* GithubRequestService.h */,
+				F91D5C9E2361CA4F005FA273 /* GithubRequestService.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F91D5CA32361CAB8005FA273 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5CA92361CAFF005FA273 /* GithubRepositoriesRequestEntity.h */,
+				F91D5CAA2361CAFF005FA273 /* GithubRepositoriesRequestEntity.m */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		F91D5CA52361CAC9005FA273 /* Commits */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5CAF2361CB58005FA273 /* GithubCommitsRequestEntity.h */,
+				F91D5CB02361CB58005FA273 /* GithubCommitsRequestEntity.m */,
+			);
+			path = Commits;
+			sourceTree = "<group>";
+		};
+		F91D5CB22361CD3D005FA273 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5CA12361CA82005FA273 /* Request */,
+				F91D5CB32361CD48005FA273 /* Response */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		F91D5CB32361CD48005FA273 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5CB42361CD55005FA273 /* Commits */,
+				F91D5CB52361CD59005FA273 /* Repositories */,
+				F91D5CB72361CD97005FA273 /* GithubBaseResponseEntity.h */,
+				F91D5CB82361CD97005FA273 /* GithubBaseResponseEntity.m */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		F91D5CB42361CD55005FA273 /* Commits */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5CCF2361FDC7005FA273 /* Commit */,
+				F91D5CBA2361CDB9005FA273 /* GithubCommitsResponseEntity.h */,
+				F91D5CBB2361CDB9005FA273 /* GithubCommitsResponseEntity.m */,
+			);
+			path = Commits;
+			sourceTree = "<group>";
+		};
+		F91D5CB52361CD59005FA273 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5CC72361DF44005FA273 /* Repository */,
+				F91D5CBD2361CDD1005FA273 /* GithubRepositoriesResponseEntity.h */,
+				F91D5CBE2361CDD1005FA273 /* GithubRepositoriesResponseEntity.m */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		F91D5CC32361DDD4005FA273 /* Author */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5CC42361DE0E005FA273 /* GithubRepositoryAuthorEntity.h */,
+				F91D5CC52361DE0E005FA273 /* GithubRepositoryAuthorEntity.m */,
+			);
+			path = Author;
+			sourceTree = "<group>";
+		};
+		F91D5CC72361DF44005FA273 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5CC32361DDD4005FA273 /* Author */,
+				F91D5CC82361DF55005FA273 /* GithubRepositoryEntity.h */,
+				F91D5CC92361DF55005FA273 /* GithubRepositoryEntity.m */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		F91D5CCB2361E0A7005FA273 /* SerializableEntity */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5CCC2361E0B9005FA273 /* SerializableEntity.h */,
+				F91D5CCD2361E0B9005FA273 /* SerializableEntity.m */,
+			);
+			path = SerializableEntity;
+			sourceTree = "<group>";
+		};
+		F91D5CCF2361FDC7005FA273 /* Commit */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5CD02361FDE2005FA273 /* GithubCommitEntity.h */,
+				F91D5CD12361FDE2005FA273 /* GithubCommitEntity.m */,
+			);
+			path = Commit;
+			sourceTree = "<group>";
+		};
+		F91D5CD72362E081005FA273 /* ErrorConvertion */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5CD82362E09C005FA273 /* ErrorConvertionService.h */,
+				F91D5CD92362E09C005FA273 /* ErrorConvertionService.m */,
+			);
+			path = ErrorConvertion;
+			sourceTree = "<group>";
+		};
+		F91D5CDB2362E691005FA273 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5D4A23632AA5005FA273 /* SAMKeychain */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
+		F91D5CE52362E81E005FA273 /* Credentials */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5CE62362E83B005FA273 /* CredentialsStorageService.h */,
+				F91D5CE72362E83B005FA273 /* CredentialsStorageService.m */,
+			);
+			path = Credentials;
+			sourceTree = "<group>";
+		};
+		F91D5CE92362E9BE005FA273 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5CEA2362E9BE005FA273 /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F91D5CEC2362FAB2005FA273 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5D02236300B0005FA273 /* SessionUser */,
+				F91D5CED2362FABE005FA273 /* SessionHolder.h */,
+				F91D5CEE2362FABE005FA273 /* SessionHolder.m */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		F91D5D02236300B0005FA273 /* SessionUser */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5D03236300BE005FA273 /* SessionUser.h */,
+				F91D5D04236300BE005FA273 /* SessionUser.m */,
+			);
+			path = SessionUser;
+			sourceTree = "<group>";
+		};
+		F91D5D2D23631502005FA273 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5D4323631D0C005FA273 /* Wireframe */,
+				F91D5D5D236337D3005FA273 /* Model */,
+				F91D5D4723632499005FA273 /* View */,
+			);
+			path = Abstract;
+			sourceTree = "<group>";
+		};
+		F91D5D4323631D0C005FA273 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5D4423631D21005FA273 /* Wireframe.h */,
+				F91D5D4523631D21005FA273 /* Wireframe.m */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		F91D5D4723632499005FA273 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5D2E23631513005FA273 /* AbstractViewController.h */,
+				F91D5D2F23631513005FA273 /* AbstractViewController.m */,
+				F91D5D48236324E1005FA273 /* AbstractViewInput.h */,
+				F91D5D79236460A9005FA273 /* AbstractViewOutput.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F91D5D4A23632AA5005FA273 /* SAMKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5D4B23632AA5005FA273 /* LICENSE */,
+				F91D5D4C23632AA5005FA273 /* Readme.markdown */,
+				F91D5D4D23632AA5005FA273 /* Support */,
+				F91D5D4F23632AA5005FA273 /* Sources */,
+			);
+			path = SAMKeychain;
+			sourceTree = "<group>";
+		};
+		F91D5D4D23632AA5005FA273 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5D4E23632AA5005FA273 /* SAMKeychain.bundle */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		F91D5D4F23632AA5005FA273 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5D5023632AA5005FA273 /* SAMKeychainQuery.m */,
+				F91D5D5123632AA5005FA273 /* SAMKeychain.h */,
+				F91D5D5223632AA5005FA273 /* SAMKeychainQuery.h */,
+				F91D5D5323632AA5005FA273 /* SAMKeychain.m */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		F91D5D59236332E7005FA273 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5D5A236332FA005FA273 /* RepositoriesTableViewCell.h */,
+				F91D5D5B236332FA005FA273 /* RepositoriesTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F91D5D5D236337D3005FA273 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5D5E236337E6005FA273 /* AbstractModel.h */,
+				F91D5D5F236337E6005FA273 /* AbstractModel.m */,
+				F91D5D6123633B13005FA273 /* AbstractModelOutput.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F91D5D6823633E15005FA273 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5D6923633E27005FA273 /* CommitsTableViewCell.h */,
+				F91D5D6A23633E27005FA273 /* CommitsTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F91D5D6C23633F3A005FA273 /* Fields */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5D7023633F59005FA273 /* Commit */,
+				F91D5D6D23633F4A005FA273 /* CommitsViewFields.h */,
+				F91D5D6E23633F4A005FA273 /* CommitsViewFields.m */,
+			);
+			path = Fields;
+			sourceTree = "<group>";
+		};
+		F91D5D7023633F59005FA273 /* Commit */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5D7123633F6D005FA273 /* CommitsElementViewFields.h */,
+				F91D5D7223633F6D005FA273 /* CommitsElementViewFields.m */,
+			);
+			path = Commit;
+			sourceTree = "<group>";
+		};
+		F91D5D7423645F18005FA273 /* Fields */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5D7523645F3C005FA273 /* RepositoriesViewFields.h */,
+				F91D5D7623645F3C005FA273 /* RepositoriesViewFields.m */,
+			);
+			path = Fields;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F91D5C552361B5AF005FA273 /* sb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F91D5C6C2361B5B0005FA273 /* Build configuration list for PBXNativeTarget "sb" */;
+			buildPhases = (
+				F91D5C522361B5AF005FA273 /* Sources */,
+				F91D5C532361B5AF005FA273 /* Frameworks */,
+				F91D5C542361B5AF005FA273 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sb;
+			productName = sb;
+			productReference = F91D5C562361B5AF005FA273 /* sb.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F91D5C4E2361B5AF005FA273 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = com;
+				TargetAttributes = {
+					F91D5C552361B5AF005FA273 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = F91D5C512361B5AF005FA273 /* Build configuration list for PBXProject "sb" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F91D5C4D2361B5AF005FA273;
+			productRefGroup = F91D5C572361B5AF005FA273 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F91D5C552361B5AF005FA273 /* sb */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F91D5C542361B5AF005FA273 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F91D5D5623632AA5005FA273 /* SAMKeychain.bundle in Resources */,
+				F91D5D4923632979005FA273 /* Authorization.storyboard in Resources */,
+				F91D5C992361BF9B005FA273 /* Repositories.storyboard in Resources */,
+				F91D5C662361B5B0005FA273 /* LaunchScreen.storyboard in Resources */,
+				F91D5D5423632AA5005FA273 /* LICENSE in Resources */,
+				F91D5C9B2361BFA8005FA273 /* RepositoryInfo.storyboard in Resources */,
+				F91D5C972361BF7B005FA273 /* Commits.storyboard in Resources */,
+				F91D5D5523632AA5005FA273 /* Readme.markdown in Resources */,
+				F91D5C632361B5B0005FA273 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F91D5C522361B5AF005FA273 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F91D5D0B23630515005FA273 /* RepositoriesPresenter.m in Sources */,
+				F91D5CB12361CB58005FA273 /* GithubCommitsRequestEntity.m in Sources */,
+				F91D5D4623631D21005FA273 /* Wireframe.m in Sources */,
+				F91D5CA82361CAE4005FA273 /* GithubBaseRequestEntity.m in Sources */,
+				F91D5C782361B68D005FA273 /* AuthorizationPresenter.m in Sources */,
+				F91D5D1D2363055E005FA273 /* CommitsPresenter.m in Sources */,
+				F91D5D7723645F3C005FA273 /* RepositoriesViewFields.m in Sources */,
+				F91D5D0E2363051E005FA273 /* RepositoriesModel.m in Sources */,
+				F91D5CCE2361E0B9005FA273 /* SerializableEntity.m in Sources */,
+				F91D5C9F2361CA4F005FA273 /* GithubRequestService.m in Sources */,
+				F91D5D1423630535005FA273 /* RepositoryInfoPresenter.m in Sources */,
+				F91D5D05236300BE005FA273 /* SessionUser.m in Sources */,
+				F91D5CCA2361DF55005FA273 /* GithubRepositoryEntity.m in Sources */,
+				F91D5C852361B9AC005FA273 /* RemoteRequestService.m in Sources */,
+				F91D5D3023631513005FA273 /* AbstractViewController.m in Sources */,
+				F91D5CE82362E83B005FA273 /* CredentialsStorageService.m in Sources */,
+				F91D5D60236337E6005FA273 /* AbstractModel.m in Sources */,
+				F91D5D1A23630554005FA273 /* CommitsViewController.m in Sources */,
+				F91D5C752361B664005FA273 /* AuthorizationModel.m in Sources */,
+				F91D5CB92361CD97005FA273 /* GithubBaseResponseEntity.m in Sources */,
+				8479D3DA23638E2A000808CF /* RepositoryInfoViewFields.m in Sources */,
+				F91D5CC62361DE0E005FA273 /* GithubRepositoryAuthorEntity.m in Sources */,
+				F91D5D7323633F6D005FA273 /* CommitsElementViewFields.m in Sources */,
+				F91D5C692361B5B0005FA273 /* main.m in Sources */,
+				F91D5D172363053E005FA273 /* RepositoryInfoModel.m in Sources */,
+				F91D5CDA2362E09C005FA273 /* ErrorConvertionService.m in Sources */,
+				F91D5D2023630566005FA273 /* CommitsModel.m in Sources */,
+				F91D5D6F23633F4A005FA273 /* CommitsViewFields.m in Sources */,
+				F91D5D5723632AA5005FA273 /* SAMKeychainQuery.m in Sources */,
+				F91D5D112363052C005FA273 /* RepositoryInfoViewController.m in Sources */,
+				F91D5D5C236332FA005FA273 /* RepositoriesTableViewCell.m in Sources */,
+				F91D5C5B2361B5AF005FA273 /* AppDelegate.m in Sources */,
+				F91D5CBF2361CDD1005FA273 /* GithubRepositoriesResponseEntity.m in Sources */,
+				F91D5CAB2361CAFF005FA273 /* GithubRepositoriesRequestEntity.m in Sources */,
+				F91D5CEF2362FABE005FA273 /* SessionHolder.m in Sources */,
+				F91D5D5823632AA5005FA273 /* SAMKeychain.m in Sources */,
+				F91D5CD22361FDE2005FA273 /* GithubCommitEntity.m in Sources */,
+				F91D5CBC2361CDB9005FA273 /* GithubCommitsResponseEntity.m in Sources */,
+				F91D5D08236304F6005FA273 /* RepositoriesViewController.m in Sources */,
+				F91D5D6B23633E27005FA273 /* CommitsTableViewCell.m in Sources */,
+				F91D5C7E2361B720005FA273 /* AuthorizationViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F91D5C5F2361B5AF005FA273 /* Authorization.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F91D5C602361B5AF005FA273 /* Base */,
+			);
+			name = Authorization.storyboard;
+			sourceTree = "<group>";
+		};
+		F91D5C642361B5B0005FA273 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F91D5C652361B5B0005FA273 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F91D5C6A2361B5B0005FA273 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F91D5C6B2361B5B0005FA273 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F91D5C6D2361B5B0005FA273 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z3BF2MA924;
+				INFOPLIST_FILE = "$(SRCROOT)/sb/ApplicationLayer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sb.sb;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F91D5C6E2361B5B0005FA273 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z3BF2MA924;
+				INFOPLIST_FILE = "$(SRCROOT)/sb/ApplicationLayer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sb.sb;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F91D5C512361B5AF005FA273 /* Build configuration list for PBXProject "sb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F91D5C6A2361B5B0005FA273 /* Debug */,
+				F91D5C6B2361B5B0005FA273 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F91D5C6C2361B5B0005FA273 /* Build configuration list for PBXNativeTarget "sb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F91D5C6D2361B5B0005FA273 /* Debug */,
+				F91D5C6E2361B5B0005FA273 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F91D5C4E2361B5AF005FA273 /* Project object */;
+}
